@@ -8,14 +8,17 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 public class GameBoardView {
-    private static final int WIDTH = 50;
-    private static final int HEIGHT = 50;
+    private static int  WIDTH;
+    private static int HEIGHT;
     private static final int CELL_SIZE = 20;
 
     private Rectangle[][] rectangles;
     private GridPane grid;
 
-    public GameBoardView() {
+    public GameBoardView(int myHEIGHT, int myWIDTH) {
+        WIDTH = myWIDTH;
+        HEIGHT = myHEIGHT;
+        
         // Set up the grid layout for the board
         grid = new GridPane();
         grid.setAlignment(Pos.CENTER);

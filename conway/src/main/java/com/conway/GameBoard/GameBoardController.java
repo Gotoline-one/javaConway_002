@@ -24,7 +24,7 @@ public class GameBoardController {
     private GameEvent onEnd;
     private GameEvent onStart;
 
-    public GameBoardController(GameOfLife newGame, GameBoardView newView) {
+    public GameBoardController(GameOfLife newGame, GameBoardView newView, double gameTimeLimit) {
         this.view = newView;
         this.game = newGame;
         
@@ -66,18 +66,19 @@ public class GameBoardController {
             }
         };
 
-        // Set up a timer to stop the game after 5 seconds
-        stopTimer = new PauseTransition(Duration.seconds(10));
-        stopTimer.setOnFinished(event -> {
-            timeline.stop();
-            fpsCounter.stop();
-            gameEnd();
-        });
-
+        if(gameTimeLimit >0){
+            // Set up a timer to stop the game after 5 seconds
+            stopTimer = new PauseTransition(Duration.seconds(gameTimeLimit));
+            stopTimer.setOnFinished(event -> {
+                timeline.stop();
+                fpsCounter.stop();
+                gameEnd();
+            });
+            stopTimer.play();
+        }
         // Start the game and all timers
         gameStart();
         timeline.play();
-        stopTimer.play();
         fpsCounter.start();
     }
 

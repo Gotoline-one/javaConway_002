@@ -1,8 +1,8 @@
 package com.conway;
 
 public class GameOfLife {
-    private static  int WIDTH = 50;
-    private static  int HEIGHT = 50;
+    private static int WIDTH  = 50;
+    private static int HEIGHT = 50;
     private boolean[][] board;
 
     public GameOfLife(int height, int width){

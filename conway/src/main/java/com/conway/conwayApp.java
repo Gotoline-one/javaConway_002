@@ -3,6 +3,7 @@ import java.io.File;
 
 import com.conway.GameBoard.*;
 import com.conway.MyApp.*;
+import com.conway.MyApp.CommandLineParser.*;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -13,6 +14,8 @@ public class conwayApp extends Application {
     GameBoardView gameView;
     GameOfLife gameLogic;
     GameBoardController gameController;
+    public static int WIDTH = 80, HEIGHT = 50;
+    public static double  TIME_LIMIT_SEC = 30;
 
     MyAppView view;
     public MyAppController appController;
@@ -20,10 +23,11 @@ public class conwayApp extends Application {
     @Override
     public void start(Stage primaryStage) {
 
+        
         // Create the board view (which internally creates the model)
-        gameView        = new GameBoardView();
-        gameLogic       = new GameOfLife(150,150);
-        gameController  = new GameBoardController(gameLogic, gameView);
+        gameView        = new GameBoardView(conwayApp.HEIGHT, WIDTH);
+        gameLogic       = new GameOfLife(HEIGHT,WIDTH);
+        gameController  = new GameBoardController(gameLogic, gameView, TIME_LIMIT_SEC);
 
         view = new MyAppView(gameView);
         appController = new MyAppController(view, this);
@@ -52,9 +56,44 @@ public class conwayApp extends Application {
         primaryStage.show();
     }
     
-    public static void main(String[] args) {
-        launch(args);
+    private static void dealWithOptions(String[] args){
+        CommandLineParser parser = new CommandLineParser();
+        CommandLineOptions options = parser.parseArguments(args);
+        
+        if (options.showHelp || options.showHelp) {
+            parser.printHelp();
+            return;
+        }
+
+        // options.flags.getName();
+        System.out.println(options.getName());
+
+        System.out.printf("%b" ,options.flags.height);;
+
+        if (args.length >= 2 && options.width >0  && options.height >0) {
+            WIDTH  = options.width;
+            HEIGHT = options.height;
+        }
+
+
+        // Use the parsed values as needed. For demo, we print them.
+        System.out.println("Parsed Values:");
+        System.out.println("  Height       : " + options.height);
+        System.out.println("  Width        : " + options.width);
+        System.out.println("  Time (sec)   : " + options.timeInSeconds);
+        System.out.println("  JSV Output   : " + options.jsvOutput);
+        System.out.println("  CSV Output   : " + options.csvOutput);
+        System.out.println("  Filename     : " + options.filename);
+
     }
 
 
+
+    public static void main(String[] args) {
+        dealWithOptions(args);
+        
+        launch(args);
+    }
+
+    
 }
