@@ -9,27 +9,17 @@ public class CommandLineParser {
         public int timeInSeconds = 0;
         public boolean jsvOutput = false;
         public boolean csvOutput = false;
+        public boolean debug = false;
         public boolean showHelp = false;
         public String filename = "default";
         public CommandLineFlags flags;
-
-    public String getName(){
-        String ret = "no filename";
-        if(flags !=null && flags.filename){
-            ret= ret+ String.format("filename:   %s", filename);            
-            ret= ret+ String.format("fnameflag:  %b", flags.filename);            
-        }   
-            return ret;
-        }
-
     }
 
     public class CommandLineFlags {
-        public
-            boolean height        = false;
-            boolean width         = false;
-            boolean timeInSeconds = false;
-            boolean filename      = false;
+            public boolean height        = false;
+            public boolean width         = false;
+            public boolean timeInSeconds = false;
+            public boolean filename      = false;
     }
 
     /**
@@ -100,7 +90,9 @@ public class CommandLineParser {
                 case "-c":
                     options.csvOutput = true;
                     break;
-                case "-f":
+                case "-d":
+                    options.debug = true;
+                    break;                case "-f":
                     if (i + 1 < args.length) {
                         options.filename = args[++i];
                           options.flags.filename = true;
@@ -116,17 +108,19 @@ public class CommandLineParser {
         return options;
     }
 
-    // Displays the help message.
-    public  void printHelp() {
-        System.out.println("Usage: java CommandLineParser [options]");
-        System.out.println("Options:");
-        System.out.println("  -h <height>    Set the height (integer).");
-        System.out.println("  -w <width>     Set the width (integer).");
-        System.out.println("  -t <time>      Set the time in seconds (integer).");
-        System.out.println("  -j             Enable JSV output.");
-        System.out.println("  -c             Enable CSV output.");
-        System.out.println("  -f <filename>  Specify the filename (string).");
-        System.out.println("  -?             Display this help message.");
+       
+        // Displays the help message.
+        public  void printHelp() {
+            System.out.println("Usage: java CommandLineParser [options]");
+            System.out.println("Options:");
+            System.out.println("  -h <height>    Set the height (integer).");
+            System.out.println("  -w <width>     Set the width (integer).");
+            System.out.println("  -t <time>      Set the time in seconds (integer).");
+            System.out.println("  -j             Enable JSV output.");
+            System.out.println("  -c             Enable CSV output.");
+            System.out.println("  -f <filename>  Specify the filename (string).");
+            System.out.println("  -?             Display this help message.");
+        
     }
 
     public void main(String[] args) {

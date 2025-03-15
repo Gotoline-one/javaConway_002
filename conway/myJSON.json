@@ -1,0 +1,11 @@
+{
+  "tick_rate_ms": 20,
+  "start_time_ms": 1742063417375,
+  "data": [
+    { "index": 0, "frame_count": 22, "nano_time": 233150938252100, "elapsed_ms": 1710.390 },
+    { "index": 1, "frame_count": 31, "nano_time": 233151979441400, "elapsed_ms": 2751.580 },
+    { "index": 2, "frame_count": 31, "nano_time": 233153018884100, "elapsed_ms": 3791.022 },
+    { "index": 3, "frame_count": 28, "nano_time": 233154042189100, "elapsed_ms": 4814.327 },
+    { "index": 4, "frame_count": 31, "nano_time": 233155083324700, "elapsed_ms": 5855.463 }
+  ]
+}
