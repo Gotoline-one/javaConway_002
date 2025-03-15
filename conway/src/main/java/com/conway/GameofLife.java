@@ -1,11 +1,11 @@
 package com.conway;
 
-public class GameofLife {
+public class GameOfLife {
     private static  int WIDTH = 50;
     private static  int HEIGHT = 50;
     private boolean[][] board;
 
-    public GameofLife(int height, int width){
+    public GameOfLife(int height, int width){
         HEIGHT = height;
         WIDTH = width;
         board = new boolean[HEIGHT][WIDTH];
