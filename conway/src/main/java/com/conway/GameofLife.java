@@ -39,6 +39,16 @@ public class GameOfLife {
         board = nextGen;
     }
 
+    // Method to print the current state of the board
+    public void printBoard() {
+        for (int row = 0; row < HEIGHT; row++) {
+            for (int col = 0; col < WIDTH; col++) {
+                System.out.print(board[row][col] ? "O" : ".");
+            }
+            System.out.println();
+        }
+    }
+
     // Count live neighbors
     private int countNeighbors(int row, int col) {
         int count = 0;

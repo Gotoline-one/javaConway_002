@@ -43,3 +43,5 @@ conway/target/classes/com/conway/MyApp/MyAppView.class
 conway/target/maven-archiver/pom.properties
 conway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 conway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+conway/time_Test.csv
+conway/time_Test.json

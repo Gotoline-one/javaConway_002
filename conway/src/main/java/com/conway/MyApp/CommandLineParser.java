@@ -13,6 +13,36 @@ public class CommandLineParser {
         public boolean showHelp = false;
         public String filename = "default";
         public CommandLineFlags flags;
+        public boolean quitOnEnd;
+
+        public CommandLineOptions() {
+            // Default constructor
+        }
+
+        public CommandLineOptions(CommandLineOptions newOptions) {
+            this.height = newOptions.height;
+            this.width = newOptions.width;
+            this.timeInSeconds = newOptions.timeInSeconds;
+            this.jsvOutput = newOptions.jsvOutput;
+            this.csvOutput = newOptions.csvOutput;
+            this.debug = newOptions.debug;
+            this.showHelp = newOptions.showHelp;
+            this.filename = newOptions.filename;
+            this.flags = new CommandLineFlags(newOptions.flags);
+            this.quitOnEnd = newOptions.quitOnEnd;
+        }
+        
+        public CommandLineOptions(int height, int width, int timeInSeconds, boolean jsvOutput, boolean csvOutput, boolean debug, String filename) {
+            this.height = height;
+            this.width = width;
+            this.timeInSeconds = timeInSeconds;
+            this.jsvOutput = jsvOutput;
+            this.csvOutput = csvOutput;
+            this.debug = debug;
+            this.filename = filename;
+            this.flags = new CommandLineFlags();
+    
+        }
     }
 
     public class CommandLineFlags {
@@ -20,7 +50,28 @@ public class CommandLineParser {
             public boolean width         = false;
             public boolean timeInSeconds = false;
             public boolean filename      = false;
+            
+            public CommandLineFlags() {
+                // Default constructor
+            }
+            
+            public CommandLineFlags(boolean height, boolean width, boolean timeInSeconds, boolean filename) {
+                this.height = height;
+                this.width = width;
+                this.timeInSeconds = timeInSeconds;
+                this.filename = filename;
+            }
+            
+            public CommandLineFlags(CommandLineFlags flags) {
+                this.height = flags.height;
+                this.width = flags.width;
+                this.timeInSeconds = flags.timeInSeconds;
+                this.filename = flags.filename;
+            }
+            
     }
+
+
 
     /**
      * Parses the command line arguments.
@@ -90,6 +141,9 @@ public class CommandLineParser {
                 case "-c":
                     options.csvOutput = true;
                     break;
+                case "-q": 
+                    options.quitOnEnd = true;
+                    break; 
                 case "-d":
                     options.debug = true;
                     break;                case "-f":
