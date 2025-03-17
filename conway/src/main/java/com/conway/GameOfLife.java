@@ -1,22 +1,33 @@
 package com.conway;
 
+import java.util.Random;
+
 public class GameOfLife {
     private static int WIDTH  = 50;
     private static int HEIGHT = 50;
     private boolean[][] board;
+    private final Random random; 
+
+    public GameOfLife(int height, int width, long seed){
+        HEIGHT = height;
+        WIDTH  = width;
+        random = new Random(seed);
+        board  = new boolean[HEIGHT][WIDTH];
+    }
 
     public GameOfLife(int height, int width){
         HEIGHT = height;
-        WIDTH = width;
-        board = new boolean[HEIGHT][WIDTH];
-
+        WIDTH  = width;
+        random = new Random();
+        board  = new boolean[HEIGHT][WIDTH];
     }
+    
     public boolean getCell(int row, int col){ return board[row][col]; }
 
     public  void randomizeBoard() {
         for (int row = 0; row < HEIGHT; row++) {
             for (int col = 0; col < WIDTH; col++) {
-                board[row][col] = Math.random() > 0.7;
+                board[row][col] = random.nextDouble() > 0.7;
             }
         }
     }

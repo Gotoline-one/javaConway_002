@@ -1,21 +1,22 @@
 package com.conway.MyApp;
 
-import com.conway.*;
-import com.conway.GameBoard.GameBoardController;
-import com.conway.MyApp.CommandLineParser.CommandLineOptions;
-
-import javafx.event.ActionEvent;
-import javafx.scene.layout.VBox;
-import javafx.scene.control.Label;
-import javafx.stage.Stage;
-
 import java.io.File;
 
+import com.conway.GameBoard.GameBoardController;
+import com.conway.MyApp.CommandLineParser.CommandLineOptions;
+import com.conway.conwayApp;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
 public class MyAppController {
-    private MyAppView view;
     private conwayApp model;
-    private CommandLineOptions options;
-    private GameBoardController gameController;
+
+    private final MyAppView view;
+    private final CommandLineOptions options;
+    private final GameBoardController gameController;
 
     VBox mainNode;
     Label fpsCounterLabel;
@@ -49,7 +50,7 @@ public class MyAppController {
                 fname = options.filename;
             }
 
-            if (options.jsvOutput) {
+            if (options.jsonOutput) {
                 gameController.saveBoardToJSONFile(new File("./" + fname + ".json"));
             }
 
@@ -67,12 +68,13 @@ public class MyAppController {
         });
 
         if (options.quitOnEnd) {
+            if(options.debug)   {System.out.println("Setting end of game time "+ options.timeInSeconds); }
+            
             gameController.setOnEndGame(() -> {
                 if (options.debug) System.out.println("Game Ended");
                 cleanupBeforeExit(); // Final save/flush/log
-
-                if (options.debug) setStatus("Game Ended");
                 primaryStage.close(); // Close the application window
+                System.exit(0);
             });
         }
     }

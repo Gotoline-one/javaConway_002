@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Launch Conway Clean",
+            "request": "launch",
+            "mainClass": "com.conway.conwayApp",
+            "vmArgs": "--module-path /opt/javafx-sdk/javafx-sdk-21.0.6/lib --add-modules javafx.controls",
+            "projectName": "conway",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Conway- w/arguments",
+            "request": "launch",
+            "mainClass": "com.conway.conwayApp",
+            "vmArgs": "--module-path /opt/javafx-sdk/javafx-sdk-21.0.6/lib --add-modules javafx.controls",
+            "projectName": "conway",
+            "args": ["-q", "-t", "10","-d", "-h", "50", "-w", "50", "-f", "./data/datafile", "-j"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

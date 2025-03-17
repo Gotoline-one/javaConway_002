@@ -1,8 +1,11 @@
 package com.conway;
 
-import com.conway.GameBoard.*;
-import com.conway.MyApp.*;
-import com.conway.MyApp.CommandLineParser.*;
+import com.conway.GameBoard.GameBoardController;
+import com.conway.GameBoard.GameBoardView;
+import com.conway.MyApp.CommandLineParser;
+import com.conway.MyApp.CommandLineParser.CommandLineOptions;
+import com.conway.MyApp.MyAppController;
+import com.conway.MyApp.MyAppView;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -33,7 +36,15 @@ public class conwayApp extends Application {
 
         // Create the board view (which internally creates the model)
         gameView = new GameBoardView(HEIGHT, WIDTH);
-        gameLogic = new GameOfLife(HEIGHT, WIDTH);
+        
+    
+        if(options.flags.seed)
+            gameLogic = new GameOfLife(HEIGHT, WIDTH, options.seed);
+        else
+            gameLogic = new GameOfLife(HEIGHT, WIDTH);
+        
+        
+
         gameController = new GameBoardController(gameLogic, gameView, TIME_LIMIT_SEC);
 
         view = new MyAppView(gameView);
@@ -64,13 +75,23 @@ public class conwayApp extends Application {
         }
 
         if (options.debug) {
-            System.out.println("Parsed Values:");
-            System.out.println("  Height       : " + options.height);
-            System.out.println("  Width        : " + options.width);
-            System.out.println("  Time (sec)   : " + options.timeInSeconds);
-            System.out.println("  JSV Output   : " + options.jsvOutput);
-            System.out.println("  CSV Output   : " + options.csvOutput);
-            System.out.println("  Filename     : " + options.filename);
+            parser.printHelp();
+            System.out.printf("""
+                ----DEBUG-MODE-------
+                Parsed Values_______
+                  Height .   .   .   .%d
+                  Width  .   .   .   .%d
+                  Quit after -t (sec) %b
+                  Time (sec)   .   .  %d
+                  CSV Output   .   .  %b
+                  JSON Output   .   . %b
+                  Filename   .   .   .%s
+                  Seed   .   .   .   .%d
+                  Debug   .   .   .  %b
+                """, options.height,         options.width,      options.quitOnEnd, 
+                    options.timeInSeconds,  options.csvOutput,  options.jsonOutput, 
+                    options.filename,       options.seed,       options.debug);
+
         }
     }
 
