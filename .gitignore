@@ -1,8 +1,10 @@
+conway/__a
 conway/target/
 default.csv
 default.json
 conway/myJSON.json
 conway/time_Test.csv
 conway/time_Test.json
-conway/data/
-conway/*.sh
+aggrega*.csv
+master_*.csv
+master-*.csv

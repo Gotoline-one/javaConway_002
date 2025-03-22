@@ -1,0 +1,120 @@
+Seed: 4129079762, Output File: ./data/saved_java22_4129079762
+
+real	2m1.837s
+user	0m45.008s
+sys	0m24.053s
+------------------------------------
+Seed: 3053474506, Output File: ./data/saved_java22_3053474506
+
+real	2m1.835s
+user	0m20.398s
+sys	0m2.565s
+------------------------------------
+Seed: 3534201447, Output File: ./data/saved_java22_3534201447
+
+real	2m1.858s
+user	2m38.219s
+sys	0m32.581s
+------------------------------------
+Seed: 3497448862, Output File: ./data/saved_java22_3497448862
+
+real	2m1.860s
+user	2m42.547s
+sys	0m32.692s
+------------------------------------
+Seed: 2852405230, Output File: ./data/saved_java22_2852405230
+
+real	2m1.866s
+user	2m35.118s
+sys	0m31.787s
+------------------------------------
+Seed: 3411503267, Output File: ./data/saved_java22_3411503267
+
+real	2m1.880s
+user	2m37.276s
+sys	0m31.040s
+------------------------------------
+Seed: 1033437363, Output File: ./data/saved_java22_1033437363
+
+real	2m1.842s
+user	2m38.329s
+sys	0m31.104s
+------------------------------------
+Seed: 197181812, Output File: ./data/saved_java22_197181812
+
+real	2m1.821s
+user	2m40.530s
+sys	0m31.386s
+------------------------------------
+Seed: 3385079617, Output File: ./data/saved_java22_3385079617
+
+real	2m1.820s
+user	2m35.341s
+sys	0m31.393s
+------------------------------------
+Seed: 4031530085, Output File: ./data/saved_java22_4031530085
+
+real	2m1.832s
+user	2m37.578s
+sys	0m31.922s
+------------------------------------
+Seed: 1774789858, Output File: ./data/saved_java22_1774789858
+
+real	2m1.823s
+user	0m40.176s
+sys	0m24.602s
+------------------------------------
+Seed: 2663508704, Output File: ./data/saved_java22_2663508704
+
+real	2m1.836s
+user	2m39.868s
+sys	0m32.130s
+------------------------------------
+Seed: 4163503295, Output File: ./data/saved_java22_4163503295
+
+real	2m1.806s
+user	2m39.838s
+sys	0m31.718s
+------------------------------------
+Seed: 2986831233, Output File: ./data/saved_java22_2986831233
+
+real	2m1.846s
+user	2m38.896s
+sys	0m30.710s
+------------------------------------
+Seed: 2882986532, Output File: ./data/saved_java22_2882986532
+
+real	2m1.841s
+user	2m39.695s
+sys	0m32.062s
+------------------------------------
+Seed: 1943520067, Output File: ./data/saved_java22_1943520067
+
+real	2m1.819s
+user	2m42.995s
+sys	0m31.270s
+------------------------------------
+Seed: 779353579, Output File: ./data/saved_java22_779353579
+
+real	2m1.830s
+user	0m48.464s
+sys	0m25.334s
+------------------------------------
+Seed: 3530267704, Output File: ./data/saved_java22_3530267704
+
+real	2m1.816s
+user	2m39.510s
+sys	0m30.666s
+------------------------------------
+Seed: 1646684781, Output File: ./data/saved_java22_1646684781
+
+real	2m1.846s
+user	2m41.449s
+sys	0m32.310s
+------------------------------------
+Seed: 3724544668, Output File: ./data/saved_java22_3724544668
+
+real	2m1.887s
+user	2m46.171s
+sys	0m31.552s
+------------------------------------
