@@ -1,0 +1,124 @@
+Seed: 1923641529, Output File: ./data/dumb_1923641529
+Unknown argument: -f./data/dumb_1923641529
+Usage: java CommandLineParser [options]
+Options:
+  -h <height>    Set the height (integer).
+  -w <width>     Set the width (integer).
+  -t <time>      Set the time in seconds (integer).
+  -s <seed>      Set pre-generated seed (long).
+  -j             Enable JSV output.
+  -c             Enable CSV output.
+  -f <filename>  Specify the filename (string).
+  -?             Display this help message.
+----DEBUG-MODE-------
+Parsed Values_______
+  Height .   .   .   .50
+  Width  .   .   .   .50
+  Quit after -t (sec) true
+  Time (sec)   .   .  60
+  CSV Output   .   .  false
+  JSON Output   .   . true
+  Filename   .   .   .default
+  Seed   .   .   .   .1923641529
+  Debug   .   .   .  true
+Setting end of game time 60
+Game Ended
+Shutdown hook triggered (Ctrl+C or SIGTERM).
+
+real	1m1.967s
+user	1m24.166s
+sys	0m16.531s
+------------------------------------
+Seed: 2092449124, Output File: ./data/dumb_2092449124
+Unknown argument: -f./data/dumb_2092449124
+Usage: java CommandLineParser [options]
+Options:
+  -h <height>    Set the height (integer).
+  -w <width>     Set the width (integer).
+  -t <time>      Set the time in seconds (integer).
+  -s <seed>      Set pre-generated seed (long).
+  -j             Enable JSV output.
+  -c             Enable CSV output.
+  -f <filename>  Specify the filename (string).
+  -?             Display this help message.
+----DEBUG-MODE-------
+Parsed Values_______
+  Height .   .   .   .50
+  Width  .   .   .   .50
+  Quit after -t (sec) true
+  Time (sec)   .   .  60
+  CSV Output   .   .  false
+  JSON Output   .   . true
+  Filename   .   .   .default
+  Seed   .   .   .   .2092449124
+  Debug   .   .   .  true
+Setting end of game time 60
+Game Ended
+Shutdown hook triggered (Ctrl+C or SIGTERM).
+
+real	1m1.959s
+user	1m26.606s
+sys	0m16.433s
+------------------------------------
+Seed: 1893484591, Output File: ./data/dumb_1893484591
+Unknown argument: -f./data/dumb_1893484591
+Usage: java CommandLineParser [options]
+Options:
+  -h <height>    Set the height (integer).
+  -w <width>     Set the width (integer).
+  -t <time>      Set the time in seconds (integer).
+  -s <seed>      Set pre-generated seed (long).
+  -j             Enable JSV output.
+  -c             Enable CSV output.
+  -f <filename>  Specify the filename (string).
+  -?             Display this help message.
+----DEBUG-MODE-------
+Parsed Values_______
+  Height .   .   .   .50
+  Width  .   .   .   .50
+  Quit after -t (sec) true
+  Time (sec)   .   .  60
+  CSV Output   .   .  false
+  JSON Output   .   . true
+  Filename   .   .   .default
+  Seed   .   .   .   .1893484591
+  Debug   .   .   .  true
+Setting end of game time 60
+Game Ended
+Shutdown hook triggered (Ctrl+C or SIGTERM).
+
+real	1m2.074s
+user	0m27.780s
+sys	0m4.140s
+------------------------------------
+Seed: 2930979374, Output File: ./data/dumb_2930979374
+Unknown argument: -f./data/dumb_2930979374
+Usage: java CommandLineParser [options]
+Options:
+  -h <height>    Set the height (integer).
+  -w <width>     Set the width (integer).
+  -t <time>      Set the time in seconds (integer).
+  -s <seed>      Set pre-generated seed (long).
+  -j             Enable JSV output.
+  -c             Enable CSV output.
+  -f <filename>  Specify the filename (string).
+  -?             Display this help message.
+----DEBUG-MODE-------
+Parsed Values_______
+  Height .   .   .   .50
+  Width  .   .   .   .50
+  Quit after -t (sec) true
+  Time (sec)   .   .  60
+  CSV Output   .   .  false
+  JSON Output   .   . true
+  Filename   .   .   .default
+  Seed   .   .   .   .2930979374
+  Debug   .   .   .  true
+Setting end of game time 60
+Game Ended
+Shutdown hook triggered (Ctrl+C or SIGTERM).
+
+real	1m1.967s
+user	1m22.798s
+sys	0m16.070s
+------------------------------------

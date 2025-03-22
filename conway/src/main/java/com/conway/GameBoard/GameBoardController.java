@@ -67,8 +67,13 @@ public class GameBoardController {
         };
 
         if(gameTimeLimit >0){
-            // Set up a timer to stop the game after 5 seconds
-            stopTimer = new PauseTransition(Duration.seconds(gameTimeLimit));
+            // Set up a timer based on input gameTimeLimit (in seconds) to stop the game after a certain time
+            // This timer will stop the game and call the gameEnd method
+            // when the time limit is reached
+            // Convert gameTimeLimit from seconds to milliseconds for PauseTransition
+            // and set the duration for the stopTimer
+            
+            stopTimer = new PauseTransition(Duration.millis((gameTimeLimit + 1) * 1_000));
             stopTimer.setOnFinished(event -> {
                 timeline.stop();
                 fpsCounter.stop();
@@ -93,14 +98,14 @@ public class GameBoardController {
     }
 
     private void gameEnd() {
-        System.out.println("Game is exiting...");
+        // System.out.println("Game is exiting...");
         if (onEnd != null) {
             onEnd.execute();
         }
     }
 
     private void gameStart() {
-        System.out.println("Starting Game");
+        // System.out.println("Starting Game");
         if (onStart != null) {
             onStart.execute();
         }
