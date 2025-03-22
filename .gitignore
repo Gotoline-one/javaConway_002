@@ -1,4 +1,13 @@
-conway/__a
+conway/data/test2/
+conway/data/test3/
+conway/data/test4/
+conway/data/test5/
+conway/data/test6/
+conway/data/test7/
+conway/data/test8/
+conway/data/test9/
+conway/data/test10/
+conway/data/combinedData/
 conway/target/
 default.csv
 default.json
@@ -8,7 +17,4 @@ conway/time_Test.json
 aggrega*.csv
 master_*.csv
 master-*.csv
-testing/javaConway_002
-conway/data/combinedData/
-conway/data/combinedData_aggrega*.csv
-conway/data/combinedData_master_*.csv
+master_*.json

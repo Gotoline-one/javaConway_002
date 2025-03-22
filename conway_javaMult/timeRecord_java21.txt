@@ -1,6 +1,0 @@
-Seed: 133552649, Output File: ./data/saved_java21_133552649
-
-real	0m4.655s
-user	0m10.223s
-sys	0m0.884s
-------------------------------------
