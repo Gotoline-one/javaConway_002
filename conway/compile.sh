@@ -17,7 +17,8 @@ JAR_NAME="${1:-conway.jar}"
 mkdir -p "$TARGET_DIR"
 
 echo "Compiling Java source files from $SRC_DIR into $TARGET_DIR..."
-javac --module-path "$JAVAFX_LIB" --add-modules "$MODULES" -d "$TARGET_DIR" "$SRC_DIR"/com/conway/**/*.java
+#javac --module-path "$JAVAFX_LIB" --add-modules "$MODULES" -d "$TARGET_DIR" "$SRC_DIR"/com/conway/**/*.java
+echo javac --module-path "$JAVAFX_LIB" --add-modules "$MODULES" -d "$TARGET_DIR" "$SRC_DIR"/com/conway/**/*.java
 if [ $? -ne 0 ]; then
     echo "Compilation failed."
     exit 1

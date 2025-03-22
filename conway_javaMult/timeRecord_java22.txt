@@ -1,0 +1,24 @@
+Seed: 133552649, Output File: ./data/saved_java8_133552649
+
+real	0m5.905s
+user	0m9.834s
+sys	0m1.234s
+------------------------------------
+Seed: 1423728281, Output File: ./data/saved_java8_1423728281
+
+real	0m3.195s
+user	0m5.707s
+sys	0m0.365s
+------------------------------------
+Seed: 853134403, Output File: ./data/saved_java8_853134403
+
+real	0m2.972s
+user	0m5.831s
+sys	0m0.479s
+------------------------------------
+Seed: 3446904805, Output File: ./data/saved_java8_3446904805
+
+real	0m3.184s
+user	0m6.518s
+sys	0m0.507s
+------------------------------------
