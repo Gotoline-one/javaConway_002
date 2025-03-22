@@ -8,3 +8,7 @@ conway/time_Test.json
 aggrega*.csv
 master_*.csv
 master-*.csv
+testing/javaConway_002
+conway/data/combinedData/
+conway/data/combinedData_aggrega*.csv
+conway/data/combinedData_master_*.csv
