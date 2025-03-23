@@ -13,13 +13,13 @@ This guide is to help compare JavaConway_002's JavaFX implementation between Jav
 Bash scripts are used for compiling and running Java applicaiton between java 8 and java 21
 
 ```bash
--rwxr-xr-x 1 peter peter 1949 Mar 22 14:07 compile21.sh
--rwxr-xr-x 1 peter peter 1916 Mar 22 14:07 compile8.sh
--rwxr-xr-x 1 peter peter  568 Mar 22 13:45 run21.sh
--rwxr-xr-x 1 peter peter 1822 Mar 22 13:46 run21.with.seed.sh
--rwxr-xr-x 1 peter peter  629 Mar 22 13:45 run8.sh
--rwxr-xr-x 1 peter peter 1819 Mar 22 13:46 run8.with.seed.sh
--rwxr-xr-x 1 peter peter 2688 Mar 22 13:32 runmulti.record.sh
+- compile21.sh
+- compile8.sh
+- run21.sh
+- run21.with.seed.sh
+- run8.sh
+- run8.with.seed.sh
+- runmulti.record.sh
 ```
 
 ## Diagrams
