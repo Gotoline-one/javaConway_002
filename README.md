@@ -100,6 +100,25 @@ Build successful! JAR file created: conway21.jar
 
 # Example Results
 
+results produced with 
+
+Compile java
+```bash
+./compile8.sh
+./compile21.sh
+```
+run java
+```bash
+./runmulti.record.sh
+```
+
+Get plots and data:
+```bash
+python3 compare_java_versions.py ./data_fin/
+python3 compare_java_versions.py data_fin --plot
+```
+
+
 ![Average FPS by version ](./AVG_FPS_perVer.png)
 ![Average FPS by version ](./Total_ElapsedTime_perVer.png)
 
