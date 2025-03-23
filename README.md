@@ -100,9 +100,8 @@ Build successful! JAR file created: conway21.jar
 
 # Example Results
 
-![Average FPS by version ](./avgFrameCount.png)
-![Average FPS by version ](./avg_FPS.png)
-![Average FPS by version ](./elapsed.png)
+![Average FPS by version ](./AVG_FPS_perVer.png)
+![Average FPS by version ](./Total_ElapsedTime_perVer.png)
 
 | seed       | total_elapsed_sec_21       | total_elapsed_sec_8        | avg_fps_21              | avg_fps_8               | avg_frame_count_21       | avg_frame_count_8        | sum_frame_count_21 | sum_frame_count_8 |
 |------------|----------------------------|----------------------------|-------------------------|-------------------------|--------------------------|--------------------------|--------------------|-------------------|
