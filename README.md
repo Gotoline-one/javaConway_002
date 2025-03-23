@@ -1,6 +1,6 @@
 # Setup to compare results: 
 _**NOTE: README IS A WORK IN PROGRESS**_
-
+![Game Board](./gameExample.png)
 This guide is to help compare JavaConway_002's JavaFX implementation between Java/JavaFX 8 and Java/JavaFX 21 
 - Overview
 - Setup
